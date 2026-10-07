@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Will You Get Blocked?</title>
+
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+	<div class="container">
+
+		<div id="startScreen" class="screen">
+
+			<div class="emoji">😈</div>
+
+			<h1>
+				I WILL FIND &amp;<br>
+				<span>BLOCK</span><br>
+				MY FAKE FRIENDS
+			</h1>
+
+			<div class="card">
+
+				<h2>
+					Will <span id="personName">Aniket</span>
+					block you?
+				</h2>
+
+				<p>
+					Let's see how well you know
+					<b id="personName2">Aniket</b>
+				</p>
+
+			</div>
+
+			<button onclick="startQuiz()">
+				START QUIZ ➜
+			</button>
+
+		</div>
+
+
+		<div id="quizScreen" class="screen hidden">
+
+			<div class="top">
+
+				<span id="questionNumber">
+					Question 1/10
+				</span>
+
+				<span id="score">
+					Score: 0
+				</span>
+
+			</div>
+
+			<div class="progress">
+				<div id="progressBar"></div>
+			</div>
+
+			<div class="questionCard">
+
+				<h2 id="question">
+					Question goes here
+				</h2>
+
+				<div id="options"></div>
+
+			</div>
+
+			<button id="nextButton" onclick="nextQuestion()">
+				NEXT ➜
+			</button>
+
+		</div>
+
+
+		<div id="resultScreen" class="screen hidden">
+
+			<div class="emoji">
+				🎉
+			</div>
+
+			<h1>
+				QUIZ<br>
+				COMPLETE!
+			</h1>
+
+			<div class="resultCard">
+
+				<p>
+					You know
+					<b id="resultName">Aniket</b>
+				</p>
+
+				<div id="percentage">
+					80%
+				</div>
+
+				<p id="resultMessage">
+					Pretty good! 😎
+				</p>
+
+			</div>
+
+			<button onclick="location.reload()">
+				PLAY AGAIN ↻
+			</button>
+
+		</div>
+
+	</div>
+
+
+	<script src="script.js"></script>
+
+</body>
+</html>
